@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 650px) {
+    header h1 {
+        font-size: 35px;
+    }
+    
+    header p {
+        color: #fcdcad;
+        font-size: 1.2em;
+        text-align: center;
+        width: 60vw;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    header img {
+        width: 150px;
+    }
+}

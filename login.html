@@ -20,18 +20,19 @@
                 <form action="cadastro.php" method="post" autocomplete="on">
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" id="user" placeholder="Usuário" autocomplete="username">
+                        <input type="text" name="usuario" id="user" placeholder="Usuário" autocomplete="username" required>
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="isenha" id="senha" placeholder="Senha" autocomplete="off">
+                        <input type="password" name="isenha" id="senha" placeholder="Senha" autocomplete="off" required>
                     </div>
                 </form>
-                <button class="btn">Login</button>
-                <button class="btn">Cadastrar</button>
+                <button class="btn" onclick="logar(); return false" >Login</button>
+                <button class="btn" onclick="cadastrar(); return false">Cadastrar</button>
                 <a href="#">Esqueci a senha</a>
             </div>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
