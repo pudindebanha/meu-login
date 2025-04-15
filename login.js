@@ -1,10 +1,19 @@
 function logar() {
-    let login = document.getElementById('user').value;
-    let senha = document.getElementById('senha').value;
-
-    if (login == 'admin' && senha == 'admin') { 
-        location.href = "home.html";
+    const usuarioValido = {
+      email: 'admin',
+      senha: 'admin'
+    };
+  
+    const emailDigitado = document.getElementById('user').value;
+    const senhaDigitada = document.getElementById('password').value;
+  
+    if (emailDigitado === usuarioValido.email && senhaDigitada === usuarioValido.senha) {
+      location.href = 'home.html'
     } else {
-        window.alert('Usuário ou Senha incorretos!')
+      alert('Usuário ou Senha incorretos.');
     }
-}
+  }
+
+  function cadastrar() {
+        location.href = 'cadastrar.html'
+  }
